@@ -65,7 +65,7 @@ public class Menu {
 				System.out.println(Cores.TEXT_WHITE_BOLD+"Consultar dados da Conta - por número\n\n");
 				break;
 			case 4:
-				System.out.println(Cores.TEXT_WHITE_BOLD+"Atualizar daods da Conta\n\n");
+				System.out.println(Cores.TEXT_WHITE_BOLD+"Atualizar dados da Conta\n\n");
 				break;
 			case 5:
 				System.out.println(Cores.TEXT_WHITE_BOLD+"Apagar a Conta\n\n");
