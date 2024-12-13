@@ -2,7 +2,9 @@ package conta;
 
 import java.util.Scanner;
 import conta.util.Cores;
-import conta.model.Conta;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
+
 
 public class Menu {
 
@@ -10,13 +12,14 @@ public class Menu {
 
 		// Instanciamento | Classe -> Objeto utilizável
 		
-		Conta conta1 = new Conta(1, 123 , 1 ,"Adriana" , 10000f);
+		ContaCorrente contaC1 = new ContaCorrente(1, 123 , 1 ,"Adriana" , 10000f, 10000f);
+		contaC1.visualizar();
 		
-		conta1.visualizar();
-		conta1.sacar(12000.0f);
-		conta1.visualizar();
-		conta1.depositar(5000.0f);
-		conta1.visualizar();
+		ContaCorrente contaC2 = new ContaCorrente(2,123, 1, "João", 5000f, 1000f);
+		contaC2.visualizar();
+		
+		ContaPoupanca contaP3 = new ContaPoupanca(3,123, 1, "Marcos", 1000f, 15);
+		contaP3.visualizar();
 		
 		Scanner ler = new Scanner(System.in);
 
@@ -32,7 +35,7 @@ public class Menu {
 			System.out.println("==============================================================================================================");
 			System.out.println("																												");
 			System.out.println("				1 - Criar Conta																					");
-			System.out.println("				2 - Listar todas as Contas 																		");
+			System.out.println("			 	2 - Listar todas as Contas 																		");
 			System.out.println("				3 - Buscar Conta por Numero																		");
 			System.out.println("				4 - Apagar Conta																				");
 			System.out.println("				5 - Apagar 																						");
